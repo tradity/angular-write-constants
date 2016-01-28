@@ -1,6 +1,6 @@
 {
   "name": "angular-write-constants",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a JS config for angular using constants",
   "main": "index.js",
   "scripts": {

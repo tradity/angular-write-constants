@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
+const fs = require('fs');
 const minimist = require('minimist');
-  const writeConstants = require('../');
+const writeConstants = require('../');
 
 const argv = minimist(process.argv.slice(2));
 
@@ -15,4 +16,14 @@ console.info([
 process.exit(0);
 }
 
-process.stdout.write(writeConstants.constantList(argv._, argv.module));
+const files = argv._.filter(file => {
+  try {
+    fs.accessSync(file, fs.R_OK);
+    return true;
+  } catch (e) {
+    console.warn('File is not accessible:', file);
+    return false;
+  }
+});
+
+process.stdout.write(writeConstants.constantList(files, argv.module));
