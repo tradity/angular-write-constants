@@ -1,0 +1,34 @@
+{
+  "name": "angular-write-constants",
+  "version": "1.0.0",
+  "description": "Create a JS config for angular using constants",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tradity/angular-write-constants.git"
+  },
+  "keywords": [
+    "angular",
+    "config"
+  ],
+  "author": "Anna Henningsen <sqrt@entless.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tradity/angular-write-constants/issues"
+  },
+  "homepage": "https://github.com/tradity/angular-write-constants#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "*",
+    "istanbul": "*",
+    "mocha": "*"
+  },
+  "bin": {
+    "angular-write-constants": "./bin/cli.js"
+  }
+}
