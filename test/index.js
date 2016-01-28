@@ -10,7 +10,11 @@ describe('constantList', function() {
     
     const angular = {
       module: moduleName => (angular._module = moduleName, angular),
-      constant: (name, value) => (angular._constants[name] = value, angular),
+      constant: (name, value) => {
+        assert.strictEqual(typeof angular._constants[name], 'undefined');
+        angular._constants[name] = value;
+        return angular
+      },
       _constants: {}
     };
     

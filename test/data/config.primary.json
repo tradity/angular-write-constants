@@ -1,4 +1,5 @@
 {
   "answerToEverything": 42,
-  "overriddenValue": "someOldValue"
+  "overriddenValue": "someOldValue",
+  "apiEndpoint": "https://google.com/"
 }

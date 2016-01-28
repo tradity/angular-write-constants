@@ -1,4 +1,4 @@
 {
   "overriddenValue": "someNewValue",
-  "apiEndpoint": "https://google.com/"
+  "ApiEndpoint": "https://google.com/"
 }
